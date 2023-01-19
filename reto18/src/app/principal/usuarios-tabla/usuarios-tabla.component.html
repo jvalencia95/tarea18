@@ -1,0 +1,21 @@
+<section class="container mt-5">
+  <h2 class="text-center">Tabla de Usuarios</h2>
+  <table class="table border mt-5">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">UserId</th>
+        <th scope="col">Title</th>
+        <th scope="col">Completed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of listado">
+        <td>{{user.id}}</td>
+        <td>{{user.userId}}</td>
+        <td>{{user.title}}</td>
+        <td>{{user.completed}}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
